@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>lab-07</title>
+		<style>
+			
+		</style>
+		<script>
+			function start()
+			{
+				var button=document.getElementById("wash");
+				button.addEventListener("click",washcard,false);
+			}
+			function washcard()
+			{
+				var face;
+				for(var i=0;i<=51;i++)
+				{
+					face = Math.floor(Math.random()*52);
+					setimage(i,face);
+				}
+				
+				//洗牌之後改圖片
+			}
+			function setimage(number,face)
+			{
+				var cardimage = document.getElementById("card"+number);
+				cardimage.setAttribute("src",face+".png");	
+				//更改圖片
+			}
+			window.addEventListener("load",start,false);
+		</script>
+	</head>
+	<body>
+		<h1>original order</h1>
+		<table border ="1">
+			<tbody>
+				<tr>
+						<td><img src = "0.png"></td>
+						<td><img src = "1.png"></td>
+						<td><img src = "2.png"></td>
+						<td><img src = "3.png"></td>
+						<td><img src = "4.png"></td>
+						<td><img src = "5.png"></td>
+						<td><img src = "6.png"></td>
+						<td><img src = "7.png"></td>
+						<td><img src = "8.png"></td>
+						<td><img src = "9.png"></td>
+						<td><img src = "10.png"></td>
+						<td><img src = "11.png"></td>
+						<td><img src = "12.png"></td>	
+				</tr>
+				<tr>
+						<td><img src = "13.png"></td>
+						<td><img src = "14.png"></td>
+						<td><img src = "15.png"></td>
+						<td><img src = "16.png"></td>
+						<td><img src = "17.png"></td>
+						<td><img src = "18.png"></td>
+						<td><img src = "19.png"></td>
+						<td><img src = "20.png"></td>
+						<td><img src = "21.png"></td>
+						<td><img src = "22.png"></td>
+						<td><img src = "23.png"></td>
+						<td><img src = "24.png"></td>
+						<td><img src = "25.png"></td>	
+				</tr>
+				<tr>
+						<td><img src = "26.png"></td>
+						<td><img src = "27.png"></td>
+						<td><img src = "28.png"></td>
+						<td><img src = "29.png"></td>
+						<td><img src = "30.png"></td>
+						<td><img src = "31.png"></td>
+						<td><img src = "32.png"></td>
+						<td><img src = "33.png"></td>
+						<td><img src = "34.png"></td>
+						<td><img src = "35.png"></td>
+						<td><img src = "36.png"></td>
+						<td><img src = "37.png"></td>
+						<td><img src = "38.png"></td>	
+				</tr>
+				<tr>
+						<td><img src = "39.png"></td>
+						<td><img src = "40.png"></td>
+						<td><img src = "41.png"></td>
+						<td><img src = "42.png"></td>
+						<td><img src = "43.png"></td>
+						<td><img src = "44.png"></td>
+						<td><img src = "45.png"></td>
+						<td><img src = "46.png"></td>
+						<td><img src = "47.png"></td>
+						<td><img src = "48.png"></td>
+						<td><img src = "49.png"></td>
+						<td><img src = "50.png"></td>
+						<td><img src = "51.png"></td>	
+				</tr>
+			<tbody>
+		</table>
+		<h1>random</h1>
+		<table border ="1">
+			<tbody>
+				<tr>
+						<td><img id="card0" src = "blank.png" alt ="blank"></td>
+						<td><img id="card1" src = "blank.png" alt ="blank"></td>
+						<td><img id="card2" src = "blank.png" alt ="blank"></td>
+						<td><img id="card3" src = "blank.png" alt ="blank"></td>
+						<td><img id="card4" src = "blank.png" alt ="blank"></td>
+						<td><img id="card5" src = "blank.png" alt ="blank"></td>
+						<td><img id="card6" src = "blank.png" alt ="blank"></td>
+						<td><img id="card7" src = "blank.png" alt ="blank"></td>
+						<td><img id="card8" src = "blank.png" alt ="blank"></td>
+						<td><img id="card9" src = "blank.png" alt ="blank"></td>
+						<td><img id="card10" src = "blank.png" alt ="blank"></td>
+						<td><img id="card11" src = "blank.png" alt ="blank"></td>
+						<td><img id="card12" src = "blank.png" alt ="blank"></td>
+				</tr>
+				<tr>
+						<td><img id="card13" src = "blank.png" alt ="blank"></td>
+						<td><img id="card14" src = "blank.png" alt ="blank"></td>
+						<td><img id="card15" src = "blank.png" alt ="blank"></td>
+						<td><img id="card16" src = "blank.png" alt ="blank"></td>
+						<td><img id="card17" src = "blank.png" alt ="blank"></td>
+						<td><img id="card18" src = "blank.png" alt ="blank"></td>
+						<td><img id="card19" src = "blank.png" alt ="blank"></td>
+						<td><img id="card20" src = "blank.png" alt ="blank"></td>
+						<td><img id="card21" src = "blank.png" alt ="blank"></td>
+						<td><img id="card22" src = "blank.png" alt ="blank"></td>
+						<td><img id="card23" src = "blank.png" alt ="blank"></td>
+						<td><img id="card24" src = "blank.png" alt ="blank"></td>
+						<td><img id="card25" src = "blank.png" alt ="blank"></td>
+				</tr>
+				<tr>
+						<td><img id="card26" src = "blank.png" alt ="blank"></td>
+						<td><img id="card27" src = "blank.png" alt ="blank"></td>
+						<td><img id="card28" src = "blank.png" alt ="blank"></td>
+						<td><img id="card29" src = "blank.png" alt ="blank"></td>
+						<td><img id="card30" src = "blank.png" alt ="blank"></td>
+						<td><img id="card31" src = "blank.png" alt ="blank"></td>
+						<td><img id="card32" src = "blank.png" alt ="blank"></td>
+						<td><img id="card33" src = "blank.png" alt ="blank"></td>
+						<td><img id="card34" src = "blank.png" alt ="blank"></td>
+						<td><img id="card35" src = "blank.png" alt ="blank"></td>
+						<td><img id="card36" src = "blank.png" alt ="blank"></td>
+						<td><img id="card37" src = "blank.png" alt ="blank"></td>
+						<td><img id="card38" src = "blank.png" alt ="blank"></td>
+				</tr>
+				<tr>
+						<td><img id="card39" src = "blank.png" alt ="blank"></td>
+						<td><img id="card40" src = "blank.png" alt ="blank"></td>
+						<td><img id="card41" src = "blank.png" alt ="blank"></td>
+						<td><img id="card42" src = "blank.png" alt ="blank"></td>
+						<td><img id="card43" src = "blank.png" alt ="blank"></td>
+						<td><img id="card44" src = "blank.png" alt ="blank"></td>
+						<td><img id="card45" src = "blank.png" alt ="blank"></td>
+						<td><img id="card46" src = "blank.png" alt ="blank"></td>
+						<td><img id="card47" src = "blank.png" alt ="blank"></td>
+						<td><img id="card48" src = "blank.png" alt ="blank"></td>
+						<td><img id="card49" src = "blank.png" alt ="blank"></td>
+						<td><img id="card50" src = "blank.png" alt ="blank"></td>
+						<td><img id="card51" src = "blank.png" alt ="blank"></td>
+				</tr>
+			<tbody>
+		</table>
+		<form action="#">
+			<input id="wash" type="button" value="go">
+		</form>
+	</body>
+</html>
